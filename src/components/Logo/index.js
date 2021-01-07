@@ -16,7 +16,7 @@ const index = ({ type = "main", className }) => {
   }
   return (
     <div className={"Logo"}>
-      <a href={"#"}>
+      <a href={"#top"}>
         <img
           src={logoSrc}
           alt={`Logo DX Laudos ${type !== "main" ? "principal" : "secundário"}`}
