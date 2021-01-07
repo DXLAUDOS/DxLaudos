@@ -1,10 +1,11 @@
-import React, { Component, setState } from "react";
+import React, { Component } from "react";
 import { Container, Row, Col } from "react-grid-system";
 import cn from "classnames";
 
 import "./index.scss";
 
 import Logo from "../Logo";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -27,7 +28,6 @@ export default class Navbar extends Component {
       ...this.state,
       windowTop: window.scrollY,
     });
-    console.log(this.state);
   }
 
   render() {
@@ -49,14 +49,30 @@ export default class Navbar extends Component {
               style={{ transition: "width 300ms var(--default-cubic)" }}
               md={window.scrollY > 30 ? 3 : 4}
             >
-              <Logo />
+              <ScrollAnimation
+                delay={200}
+                offset={0}
+                animateOnce={true}
+                animatePreScroll={true}
+                animateIn="fadeInDown"
+              >
+                <Logo />
+              </ScrollAnimation>
             </Col>
             <Col md={window.scrollY > 30 ? 9 : 8}>
               <ul>
                 {linksIdList.map((e, i) => {
                   return (
                     <li key={i}>
-                      <a href={`#${e.split(" ").join("-")}`}>{e}</a>
+                      <ScrollAnimation
+                        delay={200 * (i + 2)}
+                        offset={0}
+                        animateOnce={true}
+                        animatePreScroll={true}
+                        animateIn="fadeInDown"
+                      >
+                        <a href={`#${e.split(" ").join("-")}`}>{e}</a>
+                      </ScrollAnimation>
                     </li>
                   );
                 })}

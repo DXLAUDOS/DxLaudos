@@ -8,27 +8,32 @@ import Text from "../../components/Text";
 
 import imgMain from "./images/PhotoMain.png";
 import imgMainS from "./images/PhotoMainS.png";
+import ScrollAnimation from "react-animate-on-scroll";
 const Presentation = () => {
   return (
     <article className={"Presentation"} id={"DxLaudos"}>
       <Container>
         <Row>
           <Col xs={12} md={9}>
-            <Text color="primary" hr>
-              <h1>
-                Alto padrão em Laudos 2D e 3D <br /> na Odontologia.
-              </h1>
-            </Text>
+            <ScrollAnimation delay={1200} animateIn="fadeInDown">
+              <Text color="primary" hr>
+                <h1>
+                  Alto padrão em Laudos 2D e 3D <br /> na Odontologia.
+                </h1>
+              </Text>
+            </ScrollAnimation>
             <Row>
               <Col xs={12} md={8}>
-                <Text className="align-justify">
-                  <h4>
-                    A <strong>DX Laudos</strong> criou um atendimento que
-                    oferece o serviço de laudo a distância com toda a
-                    possibilidade de seus clientes personalizarem o formato que
-                    desejam receber seus serviços.
-                  </h4>
-                </Text>
+                <ScrollAnimation delay={1400} animateIn="fadeIn">
+                  <Text className="align-justify">
+                    <h4>
+                      A <strong>DX Laudos</strong> criou um atendimento que
+                      oferece o serviço de laudo a distância com toda a
+                      possibilidade de seus clientes personalizarem o formato
+                      que desejam receber seus serviços.
+                    </h4>
+                  </Text>
+                </ScrollAnimation>
               </Col>
             </Row>
           </Col>
@@ -51,9 +56,17 @@ const Presentation = () => {
       <div className={"Presentation__Image"}>
         <Col md={5} offset={{ md: 7 }}>
           <div className={"Presentation__Image__S"}>
-            <img src={imgMainS} alt={"DX Laudos Silhueta"} draggable={false} />
+            <ScrollAnimation delay={1200} animateIn="fadeInDown">
+              <img
+                src={imgMainS}
+                alt={"DX Laudos Silhueta"}
+                draggable={false}
+              />
+            </ScrollAnimation>
           </div>
-          <img src={imgMain} alt={"DX Laudos - Home"} draggable={false} />
+          <ScrollAnimation delay={1700} animateIn="fadeInDown">
+            <img src={imgMain} alt={"DX Laudos - Home"} draggable={false} />
+          </ScrollAnimation>
         </Col>
       </div>
     </article>
