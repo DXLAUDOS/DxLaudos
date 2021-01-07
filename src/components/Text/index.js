@@ -11,9 +11,10 @@ const Text = ({
 }) => {
   return (
     <div
-      className={cn(`Text ${className ? className : ""}`, {
+      className={cn(`Text`, {
         "Text--primary": color === "primary",
         [`align-${align}`]: align,
+        [className]: className,
       })}
     >
       {children}

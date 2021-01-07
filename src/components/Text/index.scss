@@ -16,6 +16,9 @@
     &.primary {
       color: var(--primary);
     }
+    &.upcase {
+      text-transform: uppercase;
+    }
   }
   &--primary {
     h1,

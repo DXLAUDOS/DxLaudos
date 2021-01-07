@@ -1,2 +1,26 @@
 .UsServices {
+  padding: 7rem 0 7rem;
+  &__header {
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 1.5rem;
+    .Text {
+      h4 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+    }
+    &__icon {
+      max-width: 60px;
+      width: 100%;
+      margin-right: 1rem;
+    }
+  }
+  &__list {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
 }

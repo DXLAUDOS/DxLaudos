@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap");
 
+// Variables
+// Breakpoints
+$xxl: 1600;
+$xl: 1200;
+$lg: 992;
+$md: 768;
+$sm: 576;
 :root {
+  --white: #ffffff;
   --blue: #3388ff;
-  --semi-light-blue: #66a6ff;
+  --secondary-blue: #3964a6;
   --light-blue: #d7e9fd;
   --dark-blue: #1b385b;
   --primary: var(--blue);
-  --secondary: var(--semi-light-blue);
+  --secondary: var(--secondary-blue);
   --background: var(--light-blue);
   --default-cubic: cubic-bezier(0, 0.21, 0.99, 0.68);
   --gradient-primary: linear-gradient(208deg, #66a6ff 9.05%, #0f70b7 76.74%);
@@ -15,9 +23,13 @@
     #d7e9fd 9.05%,
     rgba(255, 255, 255, 0.08) 76.74%
   );
+  --boxShadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 html {
   scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 0;
