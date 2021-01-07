@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
 import ScrollAnimation from "react-animate-on-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./index.scss";
 import iconBook from "./images/icon-book.png";
@@ -194,7 +194,7 @@ const UsServices = () => {
                   >
                     <img
                       className={"UsServices__header__icon"}
-                      src={iconPaperTooth}
+                      src={iconTooth}
                       draggable={false}
                       alt={"Icone Conversão de Software para planejamentos"}
                     />
