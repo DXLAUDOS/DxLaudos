@@ -1,0 +1,90 @@
+.Text {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  strong {
+    margin: 0;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+    &.primary {
+      color: var(--primary);
+    }
+  }
+  &--primary {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    strong {
+      color: var(--primary);
+    }
+  }
+  p {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 1.75rem;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  h6 {
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+  strong,
+  &.strong {
+    font-weight: bold;
+  }
+  &.w-regular {
+    font-weight: normal !important;
+  }
+  &.align {
+    &-left {
+      text-align: left;
+    }
+    &-right {
+      text-align: right;
+    }
+    &-center {
+      text-align: center;
+    }
+    &-justify {
+      text-align: justify;
+    }
+  }
+  &___hr {
+    max-width: 3.5rem;
+    width: 100%;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    border: none;
+    border-top: 2px solid var(--primary);
+  }
+}

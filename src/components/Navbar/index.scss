@@ -1,0 +1,29 @@
+.Navbar {
+  margin-top: 0;
+  padding: 1rem 0;
+  position: fixed; /* Safari */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: var(--background);
+  background: var(--gradient-secondary);
+  transition: background-color 300ms var(--default-cubic);
+  &:hover {
+    background-color: rgba(215, 233, 253, 0.8);
+  }
+  ul {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    li {
+      display: inline-block;
+      margin-right: 1.5rem;
+      line-height: 2;
+      a {
+        display: block;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

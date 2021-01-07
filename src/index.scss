@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap");
+
+:root {
+  --blue: #3388ff;
+  --semi-light-blue: #66a6ff;
+  --light-blue: #d7e9fd;
+  --dark-blue: #1b385b;
+  --primary: var(--blue);
+  --secondary: var(--semi-light-blue);
+  --background: var(--light-blue);
+  --default-cubic: cubic-bezier(0, 0.21, 0.99, 0.68);
+  --gradient-primary: linear-gradient(208deg, #66a6ff 9.05%, #0f70b7 76.74%);
+  --gradient-secondary: linear-gradient(
+    45deg,
+    #d7e9fd 9.05%,
+    rgba(255, 255, 255, 0.08) 76.74%
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--dark-blue);
+  line-height: 1.4;
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 300ms var(--default-cubic);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--secondary);
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
