@@ -1,14 +1,22 @@
 .Navbar {
-  margin-top: 0;
+  margin: 1rem 0 1.5rem;
   padding: 1rem 0;
-  position: fixed; /* Safari */
+  position: relative; /* Safari */
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
   background-color: var(--background);
   background: var(--gradient-secondary);
-  transition: background-color 300ms var(--default-cubic);
+  transition: background-color 300ms var(--default-cubic),
+    position 300ms var(--default-cubic);
+  &--fixed {
+    margin: 0;
+    position: fixed; /* Safari */
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   &:hover {
     background-color: rgba(215, 233, 253, 0.8);
   }
@@ -16,6 +24,7 @@
     list-style: none;
     display: inline-block;
     width: 100%;
+    text-align: right;
     li {
       display: inline-block;
       margin-right: 1.5rem;

@@ -15,7 +15,7 @@ const index = ({ type = "main" }) => {
       break;
   }
   return (
-    <>
+    <div className={"Logo"}>
       <a href={"#"}>
         <img
           src={logoSrc}
@@ -23,7 +23,7 @@ const index = ({ type = "main" }) => {
           draggable={"false"}
         />
       </a>
-    </>
+    </div>
   );
 };
 
