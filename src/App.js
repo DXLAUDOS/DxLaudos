@@ -3,12 +3,15 @@ import "./App.scss";
 
 import AboutUs from "./containers/about-us";
 import Header from "./containers/header";
+import Portfolio from "./containers/portfolio";
 import Presentation from "./containers/presentation";
 import UsServices from "./containers/us-services";
 
 function App() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 600);
   }, []);
   return (
     <div className="App">
@@ -16,6 +19,7 @@ function App() {
       <Presentation />
       <AboutUs />
       <UsServices />
+      <Portfolio />
     </div>
   );
 }

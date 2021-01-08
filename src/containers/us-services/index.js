@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import ScrollAnimation from "react-animate-on-scroll";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./index.scss";
@@ -11,6 +10,7 @@ import iconPaperTooth from "./images/icon-paper-tooth.png";
 import iconTooth from "./images/icon-tooth.png";
 
 import Text from "../../components/Text";
+import Animate from "../../components/Animate";
 
 const UsServices = () => {
   return (
@@ -18,11 +18,11 @@ const UsServices = () => {
       <Container>
         <Row>
           <Col sm={12} md={4} offset={{ md: 4.5 }}>
-            <ScrollAnimation offset={0} delay={200} animateIn="fadeInDown">
+            <Animate offset={0} delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Nossos Serviços</h1>
               </Text>
-            </ScrollAnimation>
+            </Animate>
           </Col>
         </Row>
         <Row>
@@ -30,136 +30,92 @@ const UsServices = () => {
             <Row>
               <Col sm={12} md={6}>
                 <div className={"UsServices__header"}>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={400 * 1}
-                    animateIn="bounceIn"
-                  >
+                  <Animate offset={0} delay={400 * 1} animate="bounceIn">
                     <img
                       className={"UsServices__header__icon"}
                       src={iconPaperTooth}
                       draggable={false}
                       alt={"Icone Radiografias Panorâmicas"}
                     />
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={200 * 1}
-                    animateIn="fadeIn"
-                  >
+                  </Animate>
+                  <Animate offset={0} delay={200 * 1} animate="fadeIn">
                     <Text>
                       <h4>
                         <strong>Radiografias Panorâmicas</strong>
                       </h4>
                     </Text>
-                  </ScrollAnimation>
+                  </Animate>
                 </div>
-                <ScrollAnimation
-                  offset={0}
-                  delay={200 * 1}
-                  animateIn="fadeInUp"
-                >
+                <Animate offset={0} delay={200 * 1} animate="fadeInUp">
                   <ul className={"UsServices__list"}>
                     <li>Laudo e traçado anatômico para implante</li>
                   </ul>
-                </ScrollAnimation>
+                </Animate>
               </Col>
               <Col sm={12} md={6}>
                 <div className={"UsServices__header"}>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={400 * 2}
-                    animateIn="bounceIn"
-                  >
+                  <Animate offset={0} delay={400 * 2} animate="bounceIn">
                     <img
                       className={"UsServices__header__icon"}
                       src={iconClipboard}
                       draggable={false}
                       alt={"Icone Análises de Telerradiografia"}
                     />
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={200 * 2}
-                    animateIn="fadeIn"
-                  >
+                  </Animate>
+                  <Animate offset={0} delay={200 * 2} animate="fadeIn">
                     <Text>
                       <h4>
                         <strong>Análises de Telerradiografia</strong>
                       </h4>
                     </Text>
-                  </ScrollAnimation>
+                  </Animate>
                 </div>
-                <ScrollAnimation
-                  offset={0}
-                  delay={200 * 2}
-                  animateIn="fadeInUp"
-                >
+                <Animate offset={0} delay={200 * 2} animate="fadeInUp">
                   <ul className={"UsServices__list"}>
                     <li>Cefalometria</li>
                     <li>Idade Óssea</li>
                   </ul>
-                </ScrollAnimation>
+                </Animate>
               </Col>
             </Row>
             <Row>
               <Col sm={12} md={6}>
                 <div className={"UsServices__header"}>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={400 * 1}
-                    animateIn="bounceIn"
-                  >
+                  <Animate offset={0} delay={400 * 1} animate="bounceIn">
                     <img
                       className={"UsServices__header__icon"}
                       src={iconMonitor}
                       draggable={false}
                       alt={"Icone Laudo de Radiografias"}
                     />
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={200 * 1}
-                    animateIn="fadeIn"
-                  >
+                  </Animate>
+                  <Animate offset={0} delay={200 * 1} animate="fadeIn">
                     <Text>
                       <h4>
                         <strong>Laudo de Radiografias</strong>
                       </h4>
                     </Text>
-                  </ScrollAnimation>
+                  </Animate>
                 </div>
-                <ScrollAnimation
-                  offset={0}
-                  delay={200 * 1}
-                  animateIn="fadeInUp"
-                >
+                <Animate offset={0} delay={200 * 1} animate="fadeInUp">
                   <ul className={"UsServices__list"}>
                     <li>Periapicais </li>
                     <li>Interproximais</li>
                     <li>Oclusais</li>
                   </ul>
-                </ScrollAnimation>
+                </Animate>
               </Col>
               <Col sm={12} md={6}>
                 <div className={"UsServices__header"}>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={400 * 2}
-                    animateIn="bounceIn"
-                  >
+                  <Animate offset={0} delay={400 * 2} animate="bounceIn">
                     <img
                       className={"UsServices__header__icon"}
                       src={iconBook}
                       draggable={false}
                       alt={"Icone Montagem de Templates e Laudos Tomograficos"}
                     />
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={200 * 2}
-                    animateIn="fadeIn"
-                  >
+                  </Animate>
+                  <Animate offset={0} delay={200 * 2} animate="fadeIn">
                     <Text>
                       <h4>
                         <strong>
@@ -167,13 +123,9 @@ const UsServices = () => {
                         </strong>
                       </h4>
                     </Text>
-                  </ScrollAnimation>
+                  </Animate>
                 </div>
-                <ScrollAnimation
-                  offset={0}
-                  delay={200 * 2}
-                  animateIn="fadeInUp"
-                >
+                <Animate offset={0} delay={200 * 2} animate="fadeInUp">
                   <ul className={"UsServices__list"}>
                     <li>Avaliação de ATM</li>
                     <li>Avaliação Ortodôntica</li>
@@ -181,29 +133,21 @@ const UsServices = () => {
                     <li>Planejamento de Implantes</li>
                     <li>Lesões Patológicas</li>
                   </ul>
-                </ScrollAnimation>
+                </Animate>
               </Col>
             </Row>
             <Row>
               <Col sm={12} md={6} offset={{ md: 3 }}>
                 <div className={"UsServices__header"}>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={400 * 1}
-                    animateIn="bounceIn"
-                  >
+                  <Animate offset={0} delay={400 * 1} animate="bounceIn">
                     <img
                       className={"UsServices__header__icon"}
                       src={iconTooth}
                       draggable={false}
                       alt={"Icone Conversão de Software para planejamentos"}
                     />
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    offset={0}
-                    delay={200 * 1}
-                    animateIn="fadeIn"
-                  >
+                  </Animate>
+                  <Animate offset={0} delay={200 * 1} animate="fadeIn">
                     <Text>
                       <h4>
                         <strong>
@@ -212,18 +156,14 @@ const UsServices = () => {
                         </strong>
                       </h4>
                     </Text>
-                  </ScrollAnimation>
+                  </Animate>
                 </div>
-                <ScrollAnimation
-                  offset={0}
-                  delay={200 * 1}
-                  animateIn="fadeInUp"
-                >
+                <Animate offset={0} delay={200 * 1} animate="fadeInUp">
                   <ul className={"UsServices__list"}>
                     <li>Dental Slice</li>
                     <li>Implant Viewer</li>
                   </ul>
-                </ScrollAnimation>
+                </Animate>
               </Col>
             </Row>
           </Col>

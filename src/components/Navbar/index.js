@@ -5,7 +5,7 @@ import cn from "classnames";
 import "./index.scss";
 
 import Logo from "../Logo";
-import ScrollAnimation from "react-animate-on-scroll";
+import Animate from "../Animate";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -49,30 +49,24 @@ export default class Navbar extends Component {
               style={{ transition: "width 300ms var(--default-cubic)" }}
               md={window.scrollY > 30 ? 3 : 4}
             >
-              <ScrollAnimation
-                delay={200}
-                offset={0}
-                animateOnce={true}
-                animatePreScroll={true}
-                animateIn="fadeInDown"
-              >
+              <Animate delay={200} offset={0} animate="fadeInDown">
                 <Logo />
-              </ScrollAnimation>
+              </Animate>
             </Col>
             <Col md={window.scrollY > 30 ? 9 : 8}>
               <ul>
                 {linksIdList.map((e, i) => {
                   return (
                     <li key={i}>
-                      <ScrollAnimation
+                      <Animate
                         delay={200 * (i + 2)}
                         offset={0}
                         animateOnce={true}
                         animatePreScroll={true}
-                        animateIn="fadeInDown"
+                        animate="fadeInDown"
                       >
                         <a href={`#${e.split(" ").join("-")}`}>{e}</a>
-                      </ScrollAnimation>
+                      </Animate>
                     </li>
                   );
                 })}

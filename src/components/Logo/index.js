@@ -3,7 +3,7 @@ import React from "react";
 import logo from "./images/logo.png";
 import logoW from "./images/logo_branco.png";
 
-const index = ({ type = "main", className }) => {
+const Logo = ({ type = "main", className }) => {
   var logoSrc;
   switch (type) {
     case type === "white":
@@ -27,4 +27,4 @@ const index = ({ type = "main", className }) => {
   );
 };
 
-export default index;
+export default Logo;

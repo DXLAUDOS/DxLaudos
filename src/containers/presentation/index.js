@@ -2,37 +2,30 @@ import React from "react";
 import { Container, Row, Col } from "react-grid-system";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import "./index.scss";
-import Text from "../../components/Text";
-
 import imgMain from "./images/PhotoMain.png";
 import imgMainS from "./images/PhotoMainS.png";
+
+import Animate from "../../components/Animate";
+import Text from "../../components/Text";
+
 const Presentation = () => {
   return (
     <article className={"Presentation"} id={"DxLaudos"}>
       <Container>
         <Row>
           <Col xs={12} md={9}>
-            <ScrollAnimation
-              animateOnce={true}
-              delay={1200}
-              animateIn="fadeInDown"
-            >
+            <Animate delay={1200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>
                   Alto padrão em Laudos 2D e 3D <br /> na Odontologia.
                 </h1>
               </Text>
-            </ScrollAnimation>
+            </Animate>
             <Row>
               <Col xs={12} md={8}>
-                <ScrollAnimation
-                  animateOnce={true}
-                  delay={1400}
-                  animateIn="fadeIn"
-                >
+                <Animate delay={1400} animate="fadeIn">
                   <Text className="align-justify">
                     <h4>
                       A <strong>DX Laudos</strong> criou um atendimento que
@@ -41,7 +34,7 @@ const Presentation = () => {
                       que desejam receber seus serviços.
                     </h4>
                   </Text>
-                </ScrollAnimation>
+                </Animate>
               </Col>
             </Row>
           </Col>
@@ -49,12 +42,7 @@ const Presentation = () => {
         <Row>
           <Col>
             <div className={"Presentation__SaibaMais"}>
-              <ScrollAnimation
-                animateOnce={true}
-                delay={1600}
-                offset={0}
-                animateIn="fadeInUp"
-              >
+              <Animate delay={1600} offset={0} animate="fadeInUp">
                 <a href={"#Sobre-a-Empresa"}>
                   <Text align="center" color="primary">
                     <h5>Saiba Mais</h5>
@@ -67,7 +55,7 @@ const Presentation = () => {
                     />
                   </Text>
                 </a>
-              </ScrollAnimation>
+              </Animate>
             </div>
           </Col>
         </Row>
@@ -75,25 +63,17 @@ const Presentation = () => {
       <div className={"Presentation__Image"}>
         <Col md={5} offset={{ md: 7 }}>
           <div className={"Presentation__Image__S"}>
-            <ScrollAnimation
-              animateOnce={true}
-              delay={1200}
-              animateIn="fadeInDown"
-            >
+            <Animate delay={1200} animate="fadeInDown">
               <img
                 src={imgMainS}
                 alt={"DX Laudos Silhueta"}
                 draggable={false}
               />
-            </ScrollAnimation>
+            </Animate>
           </div>
-          <ScrollAnimation
-            animateOnce={true}
-            delay={1700}
-            animateIn="fadeInDown"
-          >
+          <Animate delay={1700} animate="fadeInDown">
             <img src={imgMain} alt={"DX Laudos - Home"} draggable={false} />
-          </ScrollAnimation>
+          </Animate>
         </Col>
       </div>
     </article>
