@@ -5,7 +5,6 @@ import cn from "classnames";
 import "./index.scss";
 
 import Logo from "../Logo";
-import Animate from "../Animate";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -46,27 +45,26 @@ export default class Navbar extends Component {
         <Container>
           <Row align={"center"}>
             <Col
-              style={{ transition: "width 300ms var(--default-cubic)" }}
+              style={{
+                animationDelay: "200ms",
+              }}
               md={window.scrollY > 30 ? 3 : 4}
+              className={"animated fadeInDown"}
             >
-              <Animate delay={200} offset={0} animate="fadeInDown">
-                <Logo />
-              </Animate>
+              <Logo />
             </Col>
             <Col md={window.scrollY > 30 ? 9 : 8}>
               <ul>
                 {linksIdList.map((e, i) => {
                   return (
-                    <li key={i}>
-                      <Animate
-                        delay={200 * (i + 2)}
-                        offset={0}
-                        animateOnce={true}
-                        animatePreScroll={true}
-                        animate="fadeInDown"
-                      >
-                        <a href={`#${e.split(" ").join("-")}`}>{e}</a>
-                      </Animate>
+                    <li
+                      key={i}
+                      style={{
+                        animationDelay: `${200 * (i + 1)}ms`,
+                      }}
+                      className={"animated fadeInDown"}
+                    >
+                      <a href={`#${e.split(" ").join("-")}`}>{e}</a>
                     </li>
                   );
                 })}

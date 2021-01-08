@@ -1,6 +1,8 @@
 .Logo {
   width: 100%;
+  transition: width 600ms var(--default-cubic);
   img {
     max-width: 100%;
+    transition: width 600ms var(--default-cubic);
   }
 }

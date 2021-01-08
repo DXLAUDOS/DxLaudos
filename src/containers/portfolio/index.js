@@ -38,7 +38,7 @@ const Portfolio = () => {
     <article id={"Portfólio"} className={"Portfolio"}>
       <Container>
         <Row>
-          <Col sm={12} md={4} offset={{ md: 4.5 }}>
+          <Col sm={12} md={3} offset={{ md: 4.5 }}>
             <Animate delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Portfólio</h1>

@@ -3,7 +3,7 @@ import React from "react";
 import logo from "./images/logo.png";
 import logoW from "./images/logo_branco.png";
 
-const Logo = ({ type = "main", className }) => {
+const Logo = ({ type = "main", className, style }) => {
   var logoSrc;
   switch (type) {
     case type === "white":
@@ -15,7 +15,7 @@ const Logo = ({ type = "main", className }) => {
       break;
   }
   return (
-    <div className={"Logo"}>
+    <div className={`Logo ${className ? className : ""}`} style={style}>
       <a href={"#top"}>
         <img
           src={logoSrc}
