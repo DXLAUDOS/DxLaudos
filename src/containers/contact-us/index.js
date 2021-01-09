@@ -89,72 +89,76 @@ const ContactUs = () => {
                 </Animate>
               </Col>
             </Row>
-            <Animate offset={0} delay={200 * 5} animate="fadeInDown">
-              <Text>
-                <h3>
-                  <a
-                    href={`callto:${numberWhatsApp}`}
-                    rel="noreferrer"
-                    target={"_blank"}
-                  >
-                    <FontAwesomeIcon
-                      color={"var(--primary)"}
-                      icon={faWhatsapp}
-                      size={"2x"}
-                      style={{
-                        verticalAlign: "-1rem",
-                        marginRight: "1.25rem",
-                      }}
-                    />
-                    (00) 0000-0000
-                  </a>
-                </h3>
-              </Text>
-            </Animate>
-            <Animate offset={0} delay={200 * 6} animate="fadeInDown">
-              <Text>
-                <h3>
-                  <a
-                    href={"callto:0000000000"}
-                    rel="noreferrer"
-                    target={"_blank"}
-                  >
-                    <FontAwesomeIcon
-                      color={"var(--primary)"}
-                      icon={faPhone}
-                      size={"2x"}
-                      style={{
-                        verticalAlign: "-1rem",
-                        marginRight: "1rem",
-                      }}
-                    />
-                    (00) 0000-0000
-                  </a>
-                </h3>
-              </Text>
-            </Animate>
-            <Animate offset={0} delay={200 * 7} animate="fadeInDown">
-              <Text>
-                <h3 style={{ verticalAlign: "middle" }}>
-                  <a
-                    href={"mailto:dxlaudos@gmail.com"}
-                    rel="noreferrer"
-                    target={"_blank"}
-                  >
-                    <FontAwesomeIcon
-                      color={"var(--primary)"}
-                      icon={faEnvelope}
-                      size={"2x"}
-                      style={{
-                        verticalAlign: "-1rem",
-                        marginRight: "1rem",
-                      }}
-                    />
-                    dxlaudos@gmail.com
-                  </a>
-                </h3>
-              </Text>
-            </Animate>
+            <Row>
+              <Col xs={12} style={{ marginTop: "1rem" }}>
+                <Animate offset={0} delay={200 * 5} animate="fadeInDown">
+                  <Text>
+                    <h3>
+                      <a
+                        href={`callto:${numberWhatsApp}`}
+                        rel="noreferrer"
+                        target={"_blank"}
+                      >
+                        <FontAwesomeIcon
+                          color={"var(--primary)"}
+                          icon={faWhatsapp}
+                          style={{
+                            verticalAlign: "-0.75rem",
+                            marginRight: "1.25rem",
+                            fontSize: "2.5rem",
+                          }}
+                        />
+                        (00) 0000-0000
+                      </a>
+                    </h3>
+                  </Text>
+                </Animate>
+                <Animate offset={0} delay={200 * 6} animate="fadeInDown">
+                  <Text>
+                    <h3>
+                      <a
+                        href={"callto:0000000000"}
+                        rel="noreferrer"
+                        target={"_blank"}
+                      >
+                        <FontAwesomeIcon
+                          color={"var(--primary)"}
+                          icon={faPhone}
+                          style={{
+                            verticalAlign: "-0.75rem",
+                            marginRight: "1rem",
+                            fontSize: "2.5rem",
+                          }}
+                        />
+                        (00) 0000-0000
+                      </a>
+                    </h3>
+                  </Text>
+                </Animate>
+                <Animate offset={0} delay={200 * 7} animate="fadeInDown">
+                  <Text>
+                    <h3 style={{ verticalAlign: "middle" }}>
+                      <a
+                        href={"mailto:dxlaudos@gmail.com"}
+                        rel="noreferrer"
+                        target={"_blank"}
+                      >
+                        <FontAwesomeIcon
+                          color={"var(--primary)"}
+                          icon={faEnvelope}
+                          style={{
+                            verticalAlign: "-0.75rem",
+                            marginRight: "1rem",
+                            fontSize: "2.5rem",
+                          }}
+                        />
+                        dxlaudos@gmail.com
+                      </a>
+                    </h3>
+                  </Text>
+                </Animate>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

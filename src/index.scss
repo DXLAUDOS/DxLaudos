@@ -12,9 +12,9 @@
   --default-cubic: cubic-bezier(0.28, 0.34, 0.62, 0.95);
   --gradient-primary: linear-gradient(208deg, #66a6ff 9.05%, #0f70b7 76.74%);
   --gradient-secondary: linear-gradient(
-    45deg,
-    #d7e9fd 9.05%,
-    rgba(255, 255, 255, 0.08) 76.74%
+    -45deg,
+    rgba(215, 233, 253, 1) 15%,
+    rgba(215, 233, 253, 0.4) 76.74%
   );
   --boxShadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }

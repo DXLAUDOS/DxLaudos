@@ -42,7 +42,7 @@ const Button = ({
               {children}
             </button>
           ) : (
-            <a disabled={disabled} href={href} target="_blank">
+            <a disabled={disabled} href={href} target="_blank" rel="noreferrer">
               {children}
             </a>
           )}
