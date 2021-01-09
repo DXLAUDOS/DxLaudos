@@ -41,7 +41,16 @@ const ContactUs = () => {
             <Row>
               <Col md={5.5} style={{ marginBottom: "2rem" }}>
                 <Animate offset={0} delay={200 * 3} animate="fadeInDown">
-                  <Button fluid icon>
+                  <Button
+                    onClick={() => {
+                      window.open(
+                        `https://api.whatsapp.com/send?phone=55${numberWhatsApp}`,
+                        "_blank"
+                      );
+                    }}
+                    fluid
+                    icon
+                  >
                     <FontAwesomeIcon
                       icon={faWhatsapp}
                       size={"2x"}
@@ -49,12 +58,6 @@ const ContactUs = () => {
                         verticalAlign: "middle",
                         marginRight: "0.5rem",
                       }}
-                      onClick={() =>
-                        window.open(
-                          `https://api.whatsapp.com/send?phone=55${numberWhatsApp}`,
-                          "_blank"
-                        )
-                      }
                     />
                     Fale pelo WhatsApp
                   </Button>
