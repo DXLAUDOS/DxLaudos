@@ -17,7 +17,7 @@ const UsServices = () => {
     <article id={"Nossos-Serviços"} className={"UsServices"}>
       <Container>
         <Row>
-          <Col sm={12} md={4} offset={{ md: 4.5 }}>
+          <Col xs={12} md={4} offset={{ md: 4.5 }}>
             <Animate offset={0} delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Nossos Serviços</h1>
@@ -26,9 +26,9 @@ const UsServices = () => {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={10} offset={{ md: 1 }}>
+          <Col xs={12} md={10} offset={{ md: 1 }}>
             <Row>
-              <Col sm={12} md={6}>
+              <Col xs={12} md={6}>
                 <div className={"UsServices__header"}>
                   <Animate offset={0} delay={400 * 1} animate="bounceIn">
                     <img
@@ -52,7 +52,7 @@ const UsServices = () => {
                   </ul>
                 </Animate>
               </Col>
-              <Col sm={12} md={6}>
+              <Col xs={12} md={6}>
                 <div className={"UsServices__header"}>
                   <Animate offset={0} delay={400 * 2} animate="bounceIn">
                     <img
@@ -79,7 +79,7 @@ const UsServices = () => {
               </Col>
             </Row>
             <Row>
-              <Col sm={12} md={6}>
+              <Col xs={12} md={6}>
                 <div className={"UsServices__header"}>
                   <Animate offset={0} delay={400 * 1} animate="bounceIn">
                     <img
@@ -105,7 +105,7 @@ const UsServices = () => {
                   </ul>
                 </Animate>
               </Col>
-              <Col sm={12} md={6}>
+              <Col xs={12} md={6}>
                 <div className={"UsServices__header"}>
                   <Animate offset={0} delay={400 * 2} animate="bounceIn">
                     <img
@@ -137,7 +137,7 @@ const UsServices = () => {
               </Col>
             </Row>
             <Row>
-              <Col sm={12} md={6} offset={{ md: 3 }}>
+              <Col xs={12} md={6} offset={{ md: 3 }}>
                 <div className={"UsServices__header"}>
                   <Animate offset={0} delay={400 * 1} animate="bounceIn">
                     <img

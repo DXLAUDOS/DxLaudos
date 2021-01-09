@@ -1,2 +1,53 @@
 .Footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary);
+  padding: 3.5rem 0;
+  .Logo {
+    margin-bottom: 1rem;
+  }
+  .Text {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    strong {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__socialMedia {
+    margin-top: 2rem;
+    &__icons {
+      margin-top: 1rem;
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    li {
+      line-height: 2;
+      margin-bottom: 1rem;
+      a {
+        display: block;
+        font-size: 1.25rem;
+        color: var(--white);
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

@@ -5,6 +5,7 @@ import cn from "classnames";
 import "./index.scss";
 
 import Logo from "../Logo";
+import LinksList from "../LinksList";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -30,12 +31,6 @@ export default class Navbar extends Component {
   }
 
   render() {
-    const linksIdList = [
-      "Sobre a Empresa",
-      "Nossos Serviços",
-      "Portfólio",
-      "Contato",
-    ];
     return (
       <nav
         className={cn("Navbar", {
@@ -54,21 +49,7 @@ export default class Navbar extends Component {
               <Logo />
             </Col>
             <Col md={window.scrollY > 30 ? 9 : 8}>
-              <ul>
-                {linksIdList.map((e, i) => {
-                  return (
-                    <li
-                      key={i}
-                      style={{
-                        animationDelay: `${200 * (i + 1)}ms`,
-                      }}
-                      className={"animated fadeInDown"}
-                    >
-                      <a href={`#${e.split(" ").join("-")}`}>{e}</a>
-                    </li>
-                  );
-                })}
-              </ul>
+              <LinksList />
             </Col>
           </Row>
         </Container>

@@ -16,7 +16,7 @@ const Animate = ({
       animateIn={animate}
       duration={duration}
       offset={offset}
-      className={className ? className : ""}
+      className={`AnimateOnScroll ${className ? className : ""}`}
       animatePreScroll={true}
     >
       {children}

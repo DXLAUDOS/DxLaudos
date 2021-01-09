@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap");
 
-// Variables
-// Breakpoints
-$xxl: 1600;
-$xl: 1200;
-$lg: 992;
-$md: 768;
-$sm: 576;
 :root {
   --white: #ffffff;
   --blue: #3388ff;
@@ -16,7 +9,7 @@ $sm: 576;
   --primary: var(--blue);
   --secondary: var(--secondary-blue);
   --background: var(--light-blue);
-  --default-cubic: cubic-bezier(0, 0.21, 0.99, 0.68);
+  --default-cubic: cubic-bezier(0.28, 0.34, 0.62, 0.95);
   --gradient-primary: linear-gradient(208deg, #66a6ff 9.05%, #0f70b7 76.74%);
   --gradient-secondary: linear-gradient(
     45deg,
@@ -30,6 +23,7 @@ html {
 }
 * {
   box-sizing: border-box;
+  outline: none;
 }
 body {
   margin: 0;

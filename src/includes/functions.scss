@@ -1,0 +1,15 @@
+// Breakpoints
+$xxl: 1600;
+$xl: 1200;
+$lg: 992;
+$md: 768;
+$sm: 576;
+$mobile: "(max-width: 576px)";
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1200px)";
+
+@mixin respond-to($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}

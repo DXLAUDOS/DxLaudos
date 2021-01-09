@@ -38,15 +38,15 @@ const Portfolio = () => {
     <article id={"Portfólio"} className={"Portfolio"}>
       <Container>
         <Row>
-          <Col sm={12} md={3} offset={{ md: 4.5 }}>
+          <Col xs={12} md={3} offset={{ md: 5 }}>
             <Animate delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Portfólio</h1>
               </Text>
             </Animate>
           </Col>
-          <Col sm={12}>
-            <Animate delay={200} animate="fadeInRight">
+          <Col xs={12}>
+            <Animate delay={200} animate="fadeIn">
               <Carousel photos={carouselImgs} />
             </Animate>
           </Col>
