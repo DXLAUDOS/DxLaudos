@@ -1,5 +1,7 @@
 .Presentation {
   position: relative;
+  min-height: 60vh;
+  padding-top: 1rem;
   &__Image {
     position: absolute;
     top: -2rem;
@@ -15,7 +17,10 @@
     }
   }
   &__SaibaMais {
-    margin-top: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
     h5 {
       margin-bottom: 0.75rem;
     }

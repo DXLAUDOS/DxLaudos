@@ -39,27 +39,23 @@ const Presentation = () => {
             </Row>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <div className={"Presentation__SaibaMais"}>
-              <Animate delay={1600} offset={0} animate="fadeInUp">
-                <a href={"#Sobre-a-Empresa"}>
-                  <Text align="center" color="primary">
-                    <h5>Saiba Mais</h5>
-                    <FontAwesomeIcon
-                      className={"animated fadeInDown slower infinite"}
-                      style={{ animationDuration: "2s" }}
-                      color={"var(--primary)"}
-                      icon={faAngleDown}
-                      size={"lg"}
-                    />
-                  </Text>
-                </a>
-              </Animate>
-            </div>
-          </Col>
-        </Row>
       </Container>
+      <div className={"Presentation__SaibaMais"}>
+        <Animate delay={1600} offset={0} animate="fadeInUp">
+          <a href={"#Sobre-a-Empresa"}>
+            <Text align="center" color="primary">
+              <h5>Saiba Mais</h5>
+              <FontAwesomeIcon
+                className={"animated fadeInDown slower infinite"}
+                style={{ animationDuration: "2s" }}
+                color={"var(--primary)"}
+                icon={faAngleDown}
+                size={"lg"}
+              />
+            </Text>
+          </a>
+        </Animate>
+      </div>
       <div className={"Presentation__Image"}>
         <Col md={5} offset={{ md: 7 }}>
           <div className={"Presentation__Image__S"}>
