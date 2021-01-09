@@ -87,7 +87,7 @@ const ContactUs = () => {
                         marginRight: "0.5rem",
                       }}
                     />
-                    Fale pelo Menssenger
+                    Fale pelo Messenger
                   </Button>
                 </Animate>
               </Col>
