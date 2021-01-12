@@ -1,6 +1,7 @@
+@import "../../includes/functions.scss";
 .Navbar {
   margin: 1rem 0 1.5rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: relative; /* Safari */
   top: 0;
   left: 0;
@@ -10,6 +11,9 @@
   background: var(--gradient-secondary);
   transition: background-color 300ms var(--default-cubic),
     position 300ms var(--default-cubic);
+  @include respond-to($tablet) {
+    padding: 1rem 0;
+  }
   &--fixed {
     margin: 0;
     position: fixed; /* Safari */

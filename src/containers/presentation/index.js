@@ -15,16 +15,14 @@ const Presentation = () => {
     <article className={"Presentation"} id={"DxLaudos"}>
       <Container>
         <Row>
-          <Col xs={12} md={9}>
+          <Col xs={12} md={7}>
             <Animate delay={1200} animate="fadeInDown">
               <Text color="primary" hr>
-                <h1>
-                  Alto padrão em Laudos 2D e 3D <br /> na Odontologia.
-                </h1>
+                <h1>Alto padrão em Laudos 2D e 3D na Odontologia.</h1>
               </Text>
             </Animate>
             <Row>
-              <Col xs={12} md={8}>
+              <Col xs={12} md={10}>
                 <Animate delay={1400} animate="fadeIn">
                   <Text className="align-justify">
                     <h4>

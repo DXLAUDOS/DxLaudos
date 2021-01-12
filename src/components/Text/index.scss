@@ -1,3 +1,4 @@
+@import "../../includes/functions.scss";
 .Text {
   display: inline-block;
   margin: 0;
@@ -37,23 +38,38 @@
     font-weight: normal;
   }
   h1 {
-    font-size: 2.5rem;
+    @include respond-to($tablet) {
+      font-size: 2.5rem;
+    }
+    font-size: 2rem;
     font-weight: bold;
   }
   h2 {
-    font-size: 2rem;
-    font-weight: normal;
-  }
-  h3 {
+    @include respond-to($tablet) {
+      font-size: 2rem;
+    }
     font-size: 1.75rem;
     font-weight: normal;
   }
-  h4 {
+  h3 {
+    @include respond-to($tablet) {
+      font-size: 1.75rem;
+    }
     font-size: 1.5rem;
     font-weight: normal;
   }
-  h5 {
+  h4 {
+    @include respond-to($tablet) {
+      font-size: 1.5rem;
+    }
     font-size: 1.25rem;
+    font-weight: normal;
+  }
+  h5 {
+    @include respond-to($tablet) {
+      font-size: 1.25rem;
+    }
+    font-size: 1.15rem;
     font-weight: normal;
   }
   h6 {
@@ -82,13 +98,22 @@
       text-align: justify;
     }
   }
+  &.Text--hr {
+    text-align: center;
+    @include respond-to($tablet) {
+      text-align: inherit;
+    }
+  }
   &___hr {
     max-width: 3.5rem;
     width: 100%;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-    margin-left: 0;
     border: none;
     border-top: 2px solid var(--primary);
+    margin: -1rem auto 2rem;
+    @include respond-to($tablet) {
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+      margin-left: 0;
+    }
   }
 }

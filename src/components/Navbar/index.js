@@ -38,8 +38,8 @@ const Navbar = () => {
             }}
             md={scrollY > 30 ? 3 : 4}
             className={"animated fadeInDown"}
-            xs={10}
-            offset={{ xs: 1, sm: 0 }}
+            xs={8}
+            offset={{ xs: 2, sm: 0 }}
           >
             <Logo />
           </Col>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     transform: MenuVisible ? "rotate(180deg)" : "rotate(0)",
                     transition: "transform 300ms var(--default-cubic)",
                   }}
-                  size={"3x"}
+                  size={"2x"}
                 />
                 {MenuVisible && <LinksList className={"mobileList"} block />}
               </div>

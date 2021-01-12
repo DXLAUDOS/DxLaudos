@@ -14,6 +14,7 @@ const Text = ({
       className={cn(`Text`, {
         "Text--primary": color === "primary",
         [`align-${align}`]: align,
+        ["Text--hr"]: hr,
         [className]: className,
       })}
     >
