@@ -9,7 +9,7 @@ const Carousel = ({
     infinite: true,
     speed: 400,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 767,
@@ -17,6 +17,7 @@ const Carousel = ({
           arrows: false,
           centerMode: true,
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
@@ -25,6 +26,7 @@ const Carousel = ({
           arrows: false,
           centerMode: true,
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
