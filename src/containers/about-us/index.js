@@ -42,13 +42,13 @@ const AboutUs = () => {
                 <img
                   className={"AboutUs__shadowBox__icon"}
                   src={iconApp}
-                  alt={"Icone Aplicativo"}
+                  alt={"Ícone Aplicativo"}
                   draggable={false}
                 />
               </Animate>
               <Animate delay={300} animate="fadeIn">
                 <Text align={"center"}>
-                  <h4 className={"upcase"}>Especialiado</h4>
+                  <h4 className={"upcase"}>Especializado</h4>
                   <p>
                     Contamos com uma equipe <strong>especializada</strong> e com{" "}
                     <strong>larga experiência</strong> em{" "}
@@ -65,7 +65,7 @@ const AboutUs = () => {
                 <img
                   className={"AboutUs__shadowBox__icon"}
                   src={iconDentist}
-                  alt={"Icone Dentista"}
+                  alt={"Ícone Dentista"}
                   draggable={false}
                 />
               </Animate>
@@ -88,7 +88,7 @@ const AboutUs = () => {
                 <img
                   className={"AboutUs__shadowBox__icon"}
                   src={iconCalendar}
-                  alt={"Icone Calendário"}
+                  alt={"Ícone Calendário"}
                   draggable={false}
                 />
               </Animate>

@@ -35,7 +35,7 @@ const UsServices = () => {
                       className={"UsServices__header__icon"}
                       src={iconPaperTooth}
                       draggable={false}
-                      alt={"Icone Radiografias Panorâmicas"}
+                      alt={"Ícone Radiografias Panorâmicas"}
                     />
                   </Animate>
                   <Animate offset={0} delay={200 * 1} animate="fadeIn">
@@ -59,7 +59,7 @@ const UsServices = () => {
                       className={"UsServices__header__icon"}
                       src={iconClipboard}
                       draggable={false}
-                      alt={"Icone Análises de Telerradiografia"}
+                      alt={"Ícone Análises de Telerradiografia"}
                     />
                   </Animate>
                   <Animate offset={0} delay={200 * 2} animate="fadeIn">
@@ -86,7 +86,7 @@ const UsServices = () => {
                       className={"UsServices__header__icon"}
                       src={iconMonitor}
                       draggable={false}
-                      alt={"Icone Laudo de Radiografias"}
+                      alt={"Ícone Laudo de Radiografias"}
                     />
                   </Animate>
                   <Animate offset={0} delay={200 * 1} animate="fadeIn">
@@ -112,7 +112,7 @@ const UsServices = () => {
                       className={"UsServices__header__icon"}
                       src={iconBook}
                       draggable={false}
-                      alt={"Icone Montagem de Templates e Laudos Tomograficos"}
+                      alt={"Ícone Montagem de Templates e Laudos Tomograficos"}
                     />
                   </Animate>
                   <Animate offset={0} delay={200 * 2} animate="fadeIn">
@@ -144,7 +144,7 @@ const UsServices = () => {
                       className={"UsServices__header__icon"}
                       src={iconTooth}
                       draggable={false}
-                      alt={"Icone Conversão de Software para planejamentos"}
+                      alt={"Ícone Conversão de Software para planejamentos"}
                     />
                   </Animate>
                   <Animate offset={0} delay={200 * 1} animate="fadeIn">

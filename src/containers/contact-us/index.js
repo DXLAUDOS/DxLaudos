@@ -5,7 +5,7 @@ import {
   faFacebookMessenger,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.scss";
 import imgMain from "./images/ContactImage.png";
@@ -33,7 +33,7 @@ const ContactUs = () => {
     <article id={"Contato"} className={"ContactUs"}>
       <Container>
         <Row>
-          <Col xs={12} md={4} offset={{ md: 4 }}>
+          <Col xs={12} md={6} lg={6} offset={{ md: 4 }}>
             <Animate offset={0} delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Entre em Contato</h1>
