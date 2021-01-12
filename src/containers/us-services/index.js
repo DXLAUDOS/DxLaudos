@@ -119,7 +119,7 @@ const UsServices = () => {
                     <Text>
                       <h4>
                         <strong>
-                          Montagem de Templates <br />e Laudos Tomograficos
+                          Montagem de Templates <br />e Laudos Tomográficos
                         </strong>
                       </h4>
                     </Text>

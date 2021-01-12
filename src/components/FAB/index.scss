@@ -1,0 +1,46 @@
+@import "../../includes/functions.scss";
+.FAB {
+  display: inline-block;
+  position: relative;
+
+  &__container {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    button,
+    a {
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  button,
+  a {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: var(--gradient-secondary);
+    color: var(--primary);
+    border-radius: 0.25rem;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 400ms var(--default-cubic) 200ms,
+      color 400ms var(--default-cubic);
+    &:hover,
+    &:active {
+      background: var(--primary);
+      color: var(--white);
+      border: 2px solid var(--primary);
+    }
+  }
+
+  &--disabled {
+    button,
+    a {
+      background: var(--secondary);
+      cursor: default;
+    }
+  }
+}

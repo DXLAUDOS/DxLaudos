@@ -1,3 +1,4 @@
+@import "../../includes/functions.scss";
 .Footer {
   position: relative;
   width: 100%;
@@ -25,9 +26,20 @@
     &__icons {
       margin-top: 1rem;
       display: flex;
-      width: 50%;
       justify-content: space-between;
       align-content: center;
+      cursor: pointer;
+      width: 50%;
+      margin: 0 auto 1rem;
+      @include respond-to($tablet) {
+        width: 30%;
+      }
+      svg {
+        transition: 300ms var(--default-cubic);
+      }
+      svg:hover {
+        color: var(--dark-blue);
+      }
     }
   }
 

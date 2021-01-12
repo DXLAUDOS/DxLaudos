@@ -15,7 +15,20 @@ import Animate from "../../components/Animate";
 import Text from "../../components/Text";
 import Button from "../../components/Button";
 const ContactUs = () => {
-  const numberWhatsApp = "11900000000";
+  const numberWhatsApp = "(11) 97987-2443";
+  const numberWhatsApp2 = "(11) 97538-3158";
+  const contactEmail = "dxlaudosexames@gmail.com";
+  const removeMask = (_t) => {
+    return _t
+      .split("(")
+      .join("")
+      .split(")")
+      .join("")
+      .split(" ")
+      .join("")
+      .split("-")
+      .join("");
+  };
   return (
     <article id={"Contato"} className={"ContactUs"}>
       <Container>
@@ -33,7 +46,7 @@ const ContactUs = () => {
             <Animate offset={0} delay={200 * 2} animate="fadeIn">
               <Text className="align-justify">
                 <h4>
-                  Solicite os serviços pelas redes sociais, se preferir entre em
+                  Solicite os serviços pelas redes sociais. Se preferir entre em
                   contato via telefone ou e-mail.
                 </h4>
               </Text>
@@ -44,7 +57,9 @@ const ContactUs = () => {
                   <Button
                     onClick={() => {
                       window.open(
-                        `https://api.whatsapp.com/send?phone=55${numberWhatsApp}`,
+                        `https://api.whatsapp.com/send?phone=55${removeMask(
+                          numberWhatsApp
+                        )}`,
                         "_blank"
                       );
                     }}
@@ -98,7 +113,7 @@ const ContactUs = () => {
                   <Text>
                     <h3>
                       <a
-                        href={`callto:${numberWhatsApp}`}
+                        href={`https://api.whatsapp.com/send?phone=55${numberWhatsApp}`}
                         rel="noreferrer"
                         target={"_blank"}
                       >
@@ -111,7 +126,7 @@ const ContactUs = () => {
                             fontSize: "2.5rem",
                           }}
                         />
-                        (00) 0000-0000
+                        {numberWhatsApp}
                       </a>
                     </h3>
                   </Text>
@@ -120,20 +135,22 @@ const ContactUs = () => {
                   <Text>
                     <h3>
                       <a
-                        href={"callto:0000000000"}
+                        href={`https://api.whatsapp.com/send?phone=55${removeMask(
+                          numberWhatsApp2
+                        )}`}
                         rel="noreferrer"
                         target={"_blank"}
                       >
                         <FontAwesomeIcon
                           color={"var(--primary)"}
-                          icon={faPhone}
+                          icon={faWhatsapp}
                           style={{
                             verticalAlign: "-0.75rem",
                             marginRight: "1rem",
                             fontSize: "2.5rem",
                           }}
                         />
-                        (00) 0000-0000
+                        {numberWhatsApp2}
                       </a>
                     </h3>
                   </Text>
@@ -142,7 +159,7 @@ const ContactUs = () => {
                   <Text>
                     <h3 style={{ verticalAlign: "middle" }}>
                       <a
-                        href={"mailto:dxlaudos@gmail.com"}
+                        href={`mailto:${contactEmail}`}
                         rel="noreferrer"
                         target={"_blank"}
                       >
@@ -155,7 +172,7 @@ const ContactUs = () => {
                             fontSize: "2.5rem",
                           }}
                         />
-                        dxlaudos@gmail.com
+                        {contactEmail}
                       </a>
                     </h3>
                   </Text>

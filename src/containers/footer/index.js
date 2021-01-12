@@ -1,11 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faFacebook,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 import "./index.scss";
 
@@ -15,6 +11,7 @@ import Logo from "../../components/Logo";
 import LinksList from "../../components/LinksList";
 
 const Footer = () => {
+  const numberWhatsApp = "11979872443";
   return (
     <footer className={"Footer"}>
       <Container>
@@ -37,22 +34,26 @@ const Footer = () => {
               <div className={"Footer__socialMedia__icons"}>
                 <Animate offset={0} delay={200 * 4} animate="fadeInUp">
                   <FontAwesomeIcon
-                    color={"var(--white)"}
-                    icon={faInstagram}
-                    size={"3x"}
-                    className={"SocialIcon"}
-                  />
-                </Animate>
-                <Animate offset={0} delay={200 * 5} animate="fadeInUp">
-                  <FontAwesomeIcon
+                    onClick={() => {
+                      window.open(
+                        `https://www.facebook.com/dxlaudos`,
+                        "_blank"
+                      );
+                    }}
                     color={"var(--white)"}
                     icon={faFacebook}
                     size={"3x"}
                     className={"SocialIcon"}
                   />
                 </Animate>
-                <Animate offset={0} delay={200 * 6} animate="fadeInUp">
+                <Animate offset={0} delay={200 * 5} animate="fadeInUp">
                   <FontAwesomeIcon
+                    onClick={() => {
+                      window.open(
+                        `https://api.whatsapp.com/send?phone=55${numberWhatsApp}`,
+                        "_blank"
+                      );
+                    }}
                     color={"var(--white)"}
                     icon={faWhatsapp}
                     size={"3x"}
@@ -63,7 +64,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col xs={12} md={3} offset={{ md: 4 }}>
-            <LinksList />
+            <LinksList block />
           </Col>
         </Row>
         <Row>
@@ -71,7 +72,8 @@ const Footer = () => {
             <Animate offset={0} delay={200 * 7} animate="fadeInUp">
               <Text align="center">
                 <h6 style={{ color: "var(--light-blue)", marginTop: "3.5rem" }}>
-                  DXLaudos3D © Todos os direitos reservados
+                  © DXLaudos3D | CNPJ 38.441.478/0001-20 | Todos os direitos
+                  reservados.
                 </h6>
               </Text>
             </Animate>

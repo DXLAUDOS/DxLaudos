@@ -51,8 +51,8 @@ const AboutUs = () => {
                   <h4 className={"upcase"}>Especialiado</h4>
                   <p>
                     Contamos com uma equipe <strong>especializada</strong> e com{" "}
-                    <strong>larga experiência</strong>
-                    em <strong>laudos odontológicos</strong> e alto padrão em{" "}
+                    <strong>larga experiência</strong> em{" "}
+                    <strong>laudos odontológicos</strong> e alto padrão em{" "}
                     <strong>laudos 2D</strong> e <strong>3D</strong>.
                   </p>
                 </Text>
@@ -113,7 +113,7 @@ const AboutUs = () => {
                 <h5>
                   <strong>
                     Estamos no mercado desde 2003 ajudando as clínicas de todo
-                    brasil.
+                    Brasil.
                   </strong>
                 </h5>
               </Text>

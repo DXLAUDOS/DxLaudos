@@ -1,2 +1,12 @@
-.linksList {
+@import "../../includes/functions.scss";
+.LinksList {
+  padding: 0;
+
+  &__block {
+    display: block !important;
+    text-align: center;
+    @include respond-to($tablet) {
+      text-align: left;
+    }
+  }
 }

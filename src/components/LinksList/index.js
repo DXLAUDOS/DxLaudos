@@ -1,4 +1,6 @@
 import React from "react";
+import cn from "classnames";
+
 import "./index.scss";
 const LinksList = ({ className, style, block = false }) => {
   const linksIdList = [
@@ -8,7 +10,7 @@ const LinksList = ({ className, style, block = false }) => {
     "Contato",
   ];
   return (
-    <ul className={className} style={style}>
+    <ul className={cn(`LinksList ${className ? className : ""}`)} style={style}>
       {linksIdList &&
         linksIdList.map((e, i) => {
           return (
@@ -16,10 +18,10 @@ const LinksList = ({ className, style, block = false }) => {
               key={i}
               style={{
                 animationDelay: `${200 * (i + 1)}ms`,
-                display: block ? "block" : "inline-block",
-                textAlign: block ? "center" : "",
               }}
-              className={"animated fadeInDown"}
+              className={cn("animated fadeInDown", {
+                LinksList__block: block,
+              })}
             >
               <a href={`#${e.split(" ").join("-")}`}>{e}</a>
             </li>
