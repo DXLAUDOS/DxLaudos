@@ -1,9 +1,13 @@
+@import "../../includes/functions.scss";
 .Presentation {
   position: relative;
-  min-height: 60vh;
+  min-height: 100vh;
   padding-top: 1rem;
+  @include respond-to($tablet) {
+    min-height: 60vh;
+  }
   &__Image {
-    position: absolute;
+    position: relative;
     top: -2rem;
     right: 0;
     width: 100%;
@@ -15,14 +19,25 @@
       right: 0;
       z-index: -1;
     }
+
+    @include respond-to($tablet) {
+      position: absolute;
+      &__S {
+        position: absolute;
+      }
+    }
   }
   &__SaibaMais {
-    position: absolute;
-    bottom: 1rem;
+    position: relative;
+    margin-top: -1rem;
     left: 0;
     right: 0;
     h5 {
       margin-bottom: 0.75rem;
+    }
+    @include respond-to($tablet) {
+      position: absolute;
+      bottom: 1rem;
     }
   }
 }

@@ -1,8 +1,5 @@
 .AboutUs {
   padding: 7rem 0 0;
-  &__bottomText {
-    margin-top: 2rem;
-  }
   &__shadowBox {
     background-color: var(--white);
     box-shadow: var(--boxShadow);
@@ -10,6 +7,9 @@
     height: 100%;
     padding: 2rem;
     text-align: center;
+    &--margin {
+      margin-bottom: 2rem;
+    }
     &__icon {
       max-width: 6.875rem;
     }

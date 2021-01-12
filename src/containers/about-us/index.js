@@ -14,7 +14,7 @@ const AboutUs = () => {
     <article id={"Sobre-a-Empresa"} className={"AboutUs"}>
       <Container>
         <Row>
-          <Col xs={12} md={4} offset={{ md: 4.5 }}>
+          <Col xs={12} md={4} lg={5} offset={{ md: 4.5 }}>
             <Animate delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Sobre a empresa</h1>
@@ -36,7 +36,7 @@ const AboutUs = () => {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={4} className={"AboutUs__shadowBox--margin"}>
             <div className={"AboutUs__shadowBox"}>
               <Animate delay={200} animate="fadeInDown">
                 <img
@@ -59,7 +59,7 @@ const AboutUs = () => {
               </Animate>
             </div>
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={4} className={"AboutUs__shadowBox--margin"}>
             <div className={"AboutUs__shadowBox"}>
               <Animate delay={200 * 2} animate="fadeInDown">
                 <img
@@ -82,7 +82,7 @@ const AboutUs = () => {
               </Animate>
             </div>
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={4} className={"AboutUs__shadowBox--margin"}>
             <div className={"AboutUs__shadowBox"}>
               <Animate delay={200 * 3} animate="fadeInDown">
                 <img
@@ -108,11 +108,7 @@ const AboutUs = () => {
         </Row>
         <Row>
           <Col xs={12}>
-            <Animate
-              className={"AboutUs__bottomText"}
-              delay={200}
-              animate="fadeIn"
-            >
+            <Animate delay={200} animate="fadeIn">
               <Text align={"center"}>
                 <h5>
                   <strong>

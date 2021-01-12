@@ -17,7 +17,7 @@ const UsServices = () => {
     <article id={"Nossos-Serviços"} className={"UsServices"}>
       <Container>
         <Row>
-          <Col xs={12} md={4} offset={{ md: 4.5 }}>
+          <Col xs={12} md={4} lg={5} offset={{ md: 4.5 }}>
             <Animate offset={0} delay={200} animate="fadeInDown">
               <Text color="primary" hr>
                 <h1>Nossos Serviços</h1>

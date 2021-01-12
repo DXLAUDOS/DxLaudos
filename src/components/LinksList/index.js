@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-const LinksList = ({ className, style }) => {
+const LinksList = ({ className, style, block = false }) => {
   const linksIdList = [
     "Sobre a Empresa",
     "Nossos Serviços",
@@ -8,7 +8,7 @@ const LinksList = ({ className, style }) => {
     "Contato",
   ];
   return (
-    <ul className={(className, style)}>
+    <ul className={className} style={style}>
       {linksIdList &&
         linksIdList.map((e, i) => {
           return (
@@ -16,6 +16,8 @@ const LinksList = ({ className, style }) => {
               key={i}
               style={{
                 animationDelay: `${200 * (i + 1)}ms`,
+                display: block ? "block" : "inline-block",
+                textAlign: block ? "center" : "",
               }}
               className={"animated fadeInDown"}
             >
