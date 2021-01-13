@@ -1,5 +1,9 @@
 @import "../../includes/functions.scss";
 .Carousel {
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
   &__image {
     max-width: 320px;
     width: 100%;
@@ -11,7 +15,6 @@
     overflow: hidden;
     @media only screen and (max-width: 1200px) {
       max-width: 240px;
-
       height: 240px;
     }
     img {
@@ -20,9 +23,11 @@
       left: 0;
       right: 0;
       bottom: 0;
+      margin: auto;
       min-width: 100%;
-      min-height: 120%;
-      object-fit: cover;
+      min-height: 100%;
+      object-fit: contain;
+      background-color: var(--white);
     }
   }
   .slick-list {

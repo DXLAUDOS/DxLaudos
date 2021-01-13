@@ -16,7 +16,6 @@ import img11 from "./images/img11.jpg";
 import img12 from "./images/img12.jpg";
 import img13 from "./images/img13.jpg";
 import img14 from "./images/img14.jpg";
-import img15 from "./images/img15.jpg";
 
 import Carousel from "../../components/Carousel";
 import Animate from "../../components/Animate";
@@ -38,7 +37,6 @@ const Portfolio = () => {
     img12,
     img13,
     img14,
-    img15,
   ];
   return (
     <article id={"Portfólio"} className={"Portfolio"}>

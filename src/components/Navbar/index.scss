@@ -12,7 +12,7 @@
   transition: background-color 300ms var(--default-cubic),
     position 300ms var(--default-cubic);
   @include respond-to($tablet) {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   &--fixed {
     margin: 0;

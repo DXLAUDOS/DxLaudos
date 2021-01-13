@@ -27,7 +27,7 @@ const Footer = () => {
             </Animate>
             <div className={"Footer__socialMedia"}>
               <Animate offset={0} delay={200 * 3} animate="fadeInDown">
-                <Text>
+                <Text align={"center"}>
                   <h6>Siga nas redes sociais:</h6>
                 </Text>
               </Animate>
