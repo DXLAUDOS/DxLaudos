@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
+import Modal from "../Modal";
 
 import "./index.scss";
 
@@ -33,19 +34,36 @@ const Carousel = ({
   },
   photos,
 }) => {
+  const [ModalContent, setModalContent] = useState(null);
+  const setModalImage = (el, i) => {
+    setModalContent(
+      <div className={"Modal__image"}>
+        <img src={el} alt={`DxLaudos Portifolio ${i + 1}`} />
+      </div>
+    );
+  };
   return (
-    <div className={"Carousel"}>
-      <Slider {...settings}>
-        {photos &&
-          photos.map((el, i) => {
-            return (
-              <div key={i} className={"Carousel__image"}>
-                <img src={el} alt={`DxLaudos Portifolio ${i + 1}`} />
-              </div>
-            );
-          })}
-      </Slider>
-    </div>
+    <>
+      {ModalContent && (
+        <Modal onClick={() => setModalContent(null)}>{ModalContent}</Modal>
+      )}
+      <div className={"Carousel"}>
+        <Slider {...settings}>
+          {photos &&
+            photos.map((el, i) => {
+              return (
+                <div key={i} className={"Carousel__image"}>
+                  <img
+                    onClick={() => setModalImage(el, i)}
+                    src={el}
+                    alt={`DxLaudos Portifolio ${i + 1}`}
+                  />
+                </div>
+              );
+            })}
+        </Slider>
+      </div>
+    </>
   );
 };
 

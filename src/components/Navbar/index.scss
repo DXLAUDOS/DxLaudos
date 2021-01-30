@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99999;
+  z-index: 1000;
   background-color: var(--background);
   background: var(--gradient-secondary);
   transition: background-color 300ms var(--default-cubic),
