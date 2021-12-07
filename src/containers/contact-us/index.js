@@ -15,8 +15,7 @@ import Animate from "../../components/Animate";
 import Text from "../../components/Text";
 import Button from "../../components/Button";
 const ContactUs = () => {
-  const numberWhatsApp = "(11) 97987-2443";
-  const numberWhatsApp2 = "(11) 97538-3158";
+  const numberWhatsApp = "(11) 94830-9697";
   const contactEmail = "dxlaudosexames@gmail.com";
   const removeMask = (_t) => {
     return _t
@@ -127,30 +126,6 @@ const ContactUs = () => {
                           }}
                         />
                         {numberWhatsApp}
-                      </a>
-                    </h3>
-                  </Text>
-                </Animate>
-                <Animate offset={0} delay={200 * 6} animate="fadeInDown">
-                  <Text>
-                    <h3>
-                      <a
-                        href={`https://api.whatsapp.com/send?phone=55${removeMask(
-                          numberWhatsApp2
-                        )}`}
-                        rel="noreferrer"
-                        target={"_blank"}
-                      >
-                        <FontAwesomeIcon
-                          color={"var(--primary)"}
-                          icon={faWhatsapp}
-                          style={{
-                            verticalAlign: "-0.75rem",
-                            marginRight: "1rem",
-                            fontSize: "2.5rem",
-                          }}
-                        />
-                        {numberWhatsApp2}
                       </a>
                     </h3>
                   </Text>
